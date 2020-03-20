@@ -18,11 +18,11 @@ The easiest way is to read from the starting poitn until the end or maybe to rea
 
 #### What has to be done if you want to access foo.txt randomly?
 
-You need to find out which block u need to use.
+You need to find out by reading which block u need to use.
 
 #### What has to be done when the file size decreases?
 
-You need you need to find the empty "space" and connect the 2 Blocks.
+You need to write for example empty spaces in the file and then conect the other 2 Blocks by reading and writing in the new emoty Block.
 
 #### What has to be done when a file is deleted?
 
