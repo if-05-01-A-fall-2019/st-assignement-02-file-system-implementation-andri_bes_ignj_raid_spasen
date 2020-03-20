@@ -26,4 +26,4 @@ You need you need to find the empty "space" and connect the 2 Blocks.
 
 #### What has to be done when a file is deleted?
 
-You need to create space for new files.
+You need to create space for new files. For example u need to wirte empty spaces in the whole file.
