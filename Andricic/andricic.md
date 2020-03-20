@@ -1,7 +1,7 @@
 # File System Implementation
 
 ### What has to be done, when creating a file foo.txt?
-I would first of all, search the current directory or in which directory would I create the file. Very important is to manage the permissions of every user for this file. After this small Procedure I'll start to write the file on the next free block.
+I would first of all, search the current directory or in which directory would I create the file. Very important is to manage the permissions of every user for this file. When creating the file, it has to be linked to the directory.After this small Procedure I'll start to write the file on the next free block.
 
 ### What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks
 
