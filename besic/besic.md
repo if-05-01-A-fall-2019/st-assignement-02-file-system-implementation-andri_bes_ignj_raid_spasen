@@ -10,7 +10,7 @@ Benjamin Besic 3ahif
 You choose the next free blocks from the disk and WriteBlock() and then you have
 to link these blocks so that the file can be read properly. Maybe writing links.
 
-* What has to be done if a file is read sequentially?
+* What has to be done if a file is read sequentially?  
 Run ReadBlock() until the file is finished (all blocks of the file are read)
 
 * What has to be done if you want to access foo.txt randomly (seek())?  
