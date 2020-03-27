@@ -7,6 +7,8 @@ I would first of all, search the current directory or in which directory would I
 
 You have to use the next free block and link it together with the first block.
 It's similar to the nodes in a list.
+The ney gree blocks are randomly found on the disk, so they have to be linked.
+With linked together, I mean every block should know which address has the previous block and the next block.
 
 ### What has to be done if a file is read sequentially?
 I would try it with Threads. I'm not sure if reading all blocks with seperate Threads, is possible.
@@ -14,6 +16,7 @@ Reading every block with seperate Threads, would be more efficient.
 
 ### What has to be done if you want to access foo.txt randomly (seek())?
 You have to search the block, you want, and read from the found block.
+But in order to do that, you have to iterate from the beginning of the file and end, if you found the searched block.
 
 ### What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 I'll move all data of smaller blocks(blocks with less data then usually), to the first incomplete block. All empty blocks would be free.
