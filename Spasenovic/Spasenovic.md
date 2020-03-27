@@ -2,7 +2,7 @@
 #File System Implementation
 
 ###What has to be done, when creating a file foo.txt?
-When creating a file, first you have to find a new block. Then you have to override the empty block with the metadata.
+When creating a file, first you have to find a new block. Then you have to write the block address in the metadata.
 
 ###What has to be done, when the file size has to be increased? Especially take care if it needs additional blocks
 A new block has to be found. The following block doesn't have to be the next in the System so you have to find it randomly.
