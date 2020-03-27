@@ -26,4 +26,4 @@ You need to write for example empty spaces in the file and then conect the other
 
 #### What has to be done when a file is deleted?
 
-You need to create space for new files. For example u need to wirte empty spaces in the whole file.
+You need to create space for new files. For example u need to wirte empty spaces in the whole file. You also need to conect the two blocks and you need to delete the information in the meta file.
