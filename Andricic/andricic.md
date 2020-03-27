@@ -22,16 +22,20 @@ It's similar to the nodes in a list.
 The ney gree blocks are randomly found on the disk, so they have to be linked.
 With linked together, I mean every block should know which address has the previous block and the next block.
 
+
 ### What has to be done if a file is read sequentially?
 You have to start at the beginning of the file, so no matter how big the file is. You have to iterate from the beginning to the end, if you want to read the whole file.
 So you have to know where you want to edit, add, delete something of the file.
+
 
 ### What has to be done if you want to access foo.txt randomly (seek())?
 You have to search the block, you want, and read from the found block.
 But in order to do that, you have to iterate from the beginning of the file and end, if you found the searched block.
 
+
 ### What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 I'll move all data of smaller blocks(blocks with less data then usually), to the first incomplete block. All empty blocks would be free.
+
 
 ### What has to be done when a file is deleted?
 The allocated space, have to be free.
