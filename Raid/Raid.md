@@ -22,4 +22,7 @@
 
 * What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 
-we can not delete blocks so we just have to override them using ReadBlock() and write empty space in it.
+  we can not delete blocks so we just have to override them using ReadBlock() and write empty space in it.
+
+
+* What has to be done when a file is deleted?
