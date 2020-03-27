@@ -8,7 +8,7 @@
 
   first we need a new block which we then override. Using the command WriteBlock().
 
-* What has to be done, when the file size has to be increased? Especially take care if it needs    additional blocks
+* What has to be done, when the file size has   to be increased? Especially take care if it needs    additional blocks
 
   we find first a empty block which we than add to our existing block. It is important to conect the blocks.
 
