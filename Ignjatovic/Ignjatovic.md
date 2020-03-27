@@ -6,11 +6,11 @@
 
 #### What has to be done, when creating a file foo.txt?
 
-You have to find a new empty Block too start writing. We also need to write the address in the meta file.
+You have to find a new empty Block too start writing. We also need to write the address in the meta file. The meta file in the first Block.
 
 #### What has to be done, when the file size has to be increased?
 
-You need to find a new empty Blocks and connect them with the last one. You also need to change the information in re meta file.
+You need to find a new empty Blocks and connect them with the last one. You also need to change the information in the meta file.
 
 #### What has to be done if a file is read sequentially?
 
