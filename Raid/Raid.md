@@ -26,3 +26,4 @@
 
 
 * What has to be done when a file is deleted?
+  we have to write empty spaces in the block and then override the links
