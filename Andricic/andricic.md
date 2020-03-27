@@ -31,6 +31,8 @@ So you have to know where you want to edit, add, delete something of the file.
 ### What has to be done if you want to access foo.txt randomly (seek())?
 You have to search the block, you want, and read from the found block.
 But in order to do that, you have to iterate from the beginning of the file and end, if you found the searched block.
+I'll save the start address and the end address of the file in the directory's metadata.
+So if you want to read a specific block. You will be able to read from the end or from the start.
 
 
 ### What has to be done when the file size decreases? Especially take care if it needs fewer blocks
