@@ -3,8 +3,11 @@
 ### What has to be done, when creating a file foo.txt?
 I would first of all, search the current directory or in which directory would I create the file. Very important is to manage the permissions of every user for this file.
 
-When creating the file, it has to be linked to the directory.
+When creating the file, it has to be linked to the directory, with pointers, from the start and end.
+It should be possible to jump from the start to th end without iterating the whole file.
+It should be also possible to jump directly from the pointer in the directory to the start or the end.
 After this small Procedure I'll start to write the file on the next free block of the disk and in the first allocated block, I'll write down the permissions of the users, name and type of file and the actual file size as metadata.
+If the metadata is too big for one block, I'll extend it automatically to the block where the whole data fits.
 
 The permissions of every user, group and other, would I save in the metadata similar to the unix Systems.
 The metadata would be saved in the first block of the file.
@@ -37,9 +40,22 @@ So if you want to read a specific block. You will be able to read from the end o
 
 ### What has to be done when the file size decreases? Especially take care if it needs fewer blocks
 I'll move all data of smaller blocks(blocks with less data then usually), to the first incomplete block. All empty blocks would be free.
+In other words, I copy the data from the next Node and add it in the previous block, so that the file don't have any Memory-Gaps (Memory-Leaks).
+All not used nodes will be free.
 
 
 ### What has to be done when a file is deleted?
 The allocated space, have to be free.
 Every Connection to the next block have to be dissolved.
+Also the connections from the directory should be dissolved.
 So if a new file is coming, you are able to use the new free space.
+The content would be ignored, so it will be overwritten on the next writing of this block.
+
+
+NOTES
+-----
+The files have a Connection to the directory from the start node and the end node.
+If some data between the start and end got deleted, the system would close the Memory-Gap (Memory-Leak) to free the last node if possible.
+So that every small byte is ready for the next job.
+The octal number for the permissions would be at the start in the metadata saved.
+So you don't have to iterate the whole file, just to ask for the permissions.
