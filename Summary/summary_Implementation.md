@@ -60,9 +60,11 @@ The Folder-Structure would be formed like a tree.
 In the Root-Dir, there should be all Directories, where the system stores all system files and all programs, which you install or the system.
 
 
-### Image of our Directory Implementation
+### Image of our Directory- or File Implementation
 
 ![](images/Directory.jpg)
+
+![]()
 
 NOTES
 -----
