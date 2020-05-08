@@ -14,7 +14,8 @@ The metadata would be saved in the first block of the file.
 So if I need the infos like permissions of the users, file size and the location of the file, I don't have to iterate to find the infos in the file.
 Because it's at the start of the file.
 
-Unix Systems save the permissions with octal number. And in the Unix-System the octal numbers are saved, so if the system is checking the permissions of a file. He would compare the octal number of the metadata with the octal numbers in the system.
+Unix Systems save the permissions with octal number. And in the Unix-System the octal numbers are saved in the meta-data, so if the system is checking the permissions of a file. He would compare the octal number of the metadata with the octal numbers in the system.
+In order to check the octal number, the system have to save the numbers in their system.
 Every octal number has it's own configuration.
 
 
