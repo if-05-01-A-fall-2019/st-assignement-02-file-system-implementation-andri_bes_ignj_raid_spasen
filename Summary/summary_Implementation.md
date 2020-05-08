@@ -52,6 +52,17 @@ Also the connections from the directory should be dissolved.
 So if a new file is coming, you are able to use the new free space.
 The content would be ignored, so it will be overwritten on the next writing of this block.
 
+### Root-directory
+
+Every System has a Root-Directory, so our System needs also a Root-Dir.
+Our Root-Dir would be the first Directory of the system and would be owned by the root-user of the system.
+The Folder-Structure would be formed like a tree.
+In the Root-Dir, there should be all Directories, where the system stores all system files and all programs, which you install or the system.
+
+
+### Image of our Directory Implementation
+
+![](images/Directory.jpg)
 
 NOTES
 -----
